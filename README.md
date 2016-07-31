@@ -9,7 +9,7 @@ Installing
 -------
 To install BanBuilder, simply include it in your projects's `composer.json`. 
 
-	"0cool-f/banbuilder": "dev-master",
+	"0cool-f/banbuilder": "master",
 
 There are no additional dependencies required for this package to work.
 
