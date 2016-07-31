@@ -57,7 +57,8 @@ class CensorWords
 		$baseDictPath = __DIR__ . DIRECTORY_SEPARATOR .'dict/';
 
 		if (is_array($dictionary)) {
-			for ($x=0; $x < count($dictionary); $x++) {
+			$n_dictionary = count($dictionary);
+			for ($x=0; $x < $n_dictionary; $x++) {
 				if (file_exists($baseDictPath.$dictionary[$x].'.php')) {
 					include($baseDictPath.$dictionary[$x].'.php');
 				} else {
@@ -144,7 +145,8 @@ class CensorWords
 		$leet_replace['z']= '(z|z\.|z\-|Ζ)';
 
 		$censorChecks = array();
-		for ($x=0; $x<count($badwords); $x++) {
+		$n_badwords = count($badwords);
+		for ($x=0; $x < $n_badwords; $x++) {
 			$censorChecks[$x] =  $fullWords ? '/\b'.str_ireplace(array_keys($leet_replace),array_values($leet_replace), $badwords[$x]).'\b/i' 
 											: '/'.str_ireplace(array_keys($leet_replace),array_values($leet_replace), $badwords[$x]).'/i';
 		}
