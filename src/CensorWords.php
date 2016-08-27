@@ -1,6 +1,6 @@
 <?php
 
-namespace Snipe\BanBuilder;
+namespace ggiallo28\BanBuilder;
 
 class CensorWords
 {
