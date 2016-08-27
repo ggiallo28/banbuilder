@@ -1,5 +1,5 @@
 {
-    "name": "0cool-f/banbuilder",
+    "name": "ggiallo28/banbuilder",
     "description": "Library to easily handle profanity filtering in PHP projects.",
     "keywords": ["profanity", "filter", "strings", "swear", "language"],
     "license": "AGPL-3.0",
