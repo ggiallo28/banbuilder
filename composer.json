@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "0cool-f\\BanBuilder\\": "src/"
+            "ggiallo28\\BanBuilder\\": "src/"
         }
     }
 }
